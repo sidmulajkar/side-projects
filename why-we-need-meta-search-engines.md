@@ -66,9 +66,12 @@ instances can be used by a select group of people.  It is for example a SearXNG 
 group of friends or a company which can be accessed through VPN.  Also it can be
 single user one which runs on the user's laptop.
 
+### How to Install Seaxng using Docker
 
-<script src="https://gist.github.com/sidmulajkar/9a313e34fe2e79f15f58fb4ca81264eb.js"></script>
+https://gist.github.com/sidmulajkar/9a313e34fe2e79f15f58fb4ca81264eb
 
 ---
 
-<script src="https://gist.github.com/sidmulajkar/f3877b905251d4fee6f1ac323145cf89.js"></script>
+### How to use Searxng in a hackable without using docker
+
+https://gist.github.com/sidmulajkar/f3877b905251d4fee6f1ac323145cf89
