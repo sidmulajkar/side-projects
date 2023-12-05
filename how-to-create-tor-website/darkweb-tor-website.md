@@ -54,7 +54,7 @@ Want to learn more about how does the **tor** works?
 https://cybernews.com/privacy/what-is-tor-and-how-does-it-work/
 
 
-![How does tor work](/images/toworking.png) 
+![How does tor work](/how-to-create-tor-website/images/toworking.png) 
 
 
 Credit: NetworkChuck
@@ -76,7 +76,7 @@ In this blog, we are simply creating this tor website by creating the **Virtual 
 
 (or if you are **having a raspberry pi** just install the raspbian os and follow the other steps as they are similar)
 
-![VM using UbuntuServer](/images/ubuntuserver.png) 
+![VM using UbuntuServer](/how-to-create-tor-website/images/ubuntuserver.png) 
 
 
 2. Simply, login to the VM and update it(might take around 10-15mins on the first boot update and then reboot it for all packages to work properly)
@@ -86,7 +86,7 @@ sudo apt update
 ```
 
 
-![VM Update](/images/update.png) 
+![VM Update](/how-to-create-tor-website/images/update.png) 
 
 
 3. Install the tor and the Nginx for the tor website to work using the commands (you can use apache as well if not Nginx, link to that article is mentioned below at the end)
@@ -98,7 +98,7 @@ sudo apt install tor
 ```
 sudo apt install nginx
 ```
-![Tor and Nginx Install](/images/tor1.png) 
+![Tor and Nginx Install](/how-to-create-tor-website/images/tor1.png) 
 
 
 
@@ -110,9 +110,9 @@ sudo nano /etc/tor/torrc
 
 is the file we are modifying, just search for **HiddenServiceDir and HiddenServicePort** as shown in the next image, uncomment them and save them using Ctrl+X, Ctrl+S.
 
-![Tor Config](/images/torcconfig.png) 
+![Tor Config](/how-to-create-tor-website/images/torcconfig.png) 
 
-![Tor Config](/images/torrc2.png) 
+![Tor Config](/how-to-create-tor-website/images/torrc2.png) 
 
 **The HiddenServiceDir** stores the public and the private key and our .onion address is stored
 
@@ -127,12 +127,12 @@ sudo service start tor
 sudo service tor status
 ```
 
-![Tor Service Working](/images/torservice.png) 
+![Tor Service Working](/how-to-create-tor-website/images/torservice.png) 
 
 
 Similarly check for Nginx,
 
-![Nginx Service Working](/images/nginx.png) 
+![Nginx Service Working](/how-to-create-tor-website/images/nginx.png) 
 
 
 6. Now we can check our **.onion address** using the command
@@ -141,12 +141,12 @@ Similarly check for Nginx,
 sudo cat /var/lib/tor/hidden_service/hostname
 ```
 
-![Onion Address](/images/toraddress.png) 
+![Onion Address](/how-to-create-tor-website/images/toraddress.png) 
 
 
 7. Now, we can finally check our website using the address just we got with the help of tor-browser
 
-![Tor Website](/images/onionwebsite.png) 
+![Tor Website](/how-to-create-tor-website/images/onionwebsite.png) 
 
 
 8. Need to modify some more lines of the Nginx to make it safer to access
@@ -161,7 +161,7 @@ we need to uncomment highlighted lines and also add one more line.
 port_in_redirect off;
 ```
 
-![Nginx Config](/images/nginxconf.jpeg) 
+![Nginx Config](/how-to-create-tor-website/images/nginxconf.jpeg) 
 
 
 and then restart the Nginx server for one more time
@@ -184,7 +184,7 @@ We can change the details or redesign the website by modifying/adding more pages
 /var/www/html 
 ```
 
-![Nginx Config](/images/websiteredesign.png) 
+![Nginx Config](/how-to-create-tor-website/images/websiteredesign.png) 
 
 
 ---

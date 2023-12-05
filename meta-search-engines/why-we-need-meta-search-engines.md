@@ -17,7 +17,7 @@ A metasearch engine, otherwise known as an aggregator, is a search engine that s
 
 Metasearch engines work by sending requests made by a user in the search slot of a metasearch engine to numerous other search engines. The servers of the metasearch engine wait for answers from the requested search engines before they can show the final results. The results are presented based on certain guidelines depending on how they are adjusted.
 
-![Meta Search Engine Working](/images/metasearchworking.jpg)
+![Meta Search Engine Working](/meta-search-engines/images/metasearchworking.jpg)
 
 
 ---
@@ -35,7 +35,7 @@ There are many meta-search engines out in the market, but in this blog we are go
 
 SearXNG is a free internet metasearch engine which aggregates results from various search services and databases. Users are neither tracked nor profiled.
 
-![Searxng Search Console Pic](/images/searxng.png)
+![Searxng Search Console Pic](/meta-search-engines/images/searxng.png)
 
 ---
 
